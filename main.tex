@@ -1,0 +1,54 @@
+
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{afterpage}
+\usepackage{fix-cm}
+\usepackage{lipsum}
+\usepackage{sectsty}
+\usepackage{tikz}
+
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{caption}
+
+\captionsetup[figure]{
+    justification=centering
+}
+
+\definecolor{UoDBlue}{RGB}{67, 101, 226}
+\definecolor{UoDDarkBlue}{RGB}{61, 88, 151}
+\definecolor{UoDLightBlue}{RGB}{209,226,242}
+
+\usepackage{fontspec}
+\setromanfont{BaxterSans}[
+    Path=./Baxter/,
+    Extension = .otf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-RegularItalic,
+    BoldItalicFont=*-BoldItalic
+    ]
+    
+\sectionfont{\color{UoDBlue}}
+\subsectionfont{\color{UoDBlue}}
+
+\begin{document}
+
+\captionsetup[table]{skip=10pt}
+
+\input{title}
+
+\input{sections/template}
+
+\setlength{\itemsep}{-0.2cm}
+\setlength{\parsep}{-0.2cm}
+
+\end{document}
